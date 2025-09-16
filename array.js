@@ -25,8 +25,11 @@ console.log("\n");
 const person = {
   name: "김진아",
   isMale: false,
-  mbti: "ENTJ"
+  mbti: "ENTJ",
+  favoriteFoods: ["김밥", "잡채"]
 }
 
 console.log(person.name);
 console.log(person["name"]);
+
+console.log(person.favoriteFoods[1]);
