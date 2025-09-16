@@ -64,7 +64,7 @@ const sayHello = (param_name) => {
 }
 
 sayHello(username);
-
+debugger;
 const double = (num) => {
 
   const result = num * 2;
@@ -75,3 +75,17 @@ const add = sum(11, 22);
 
 const doubleResult = double(add);
 console.log(doubleResult);
+
+
+console.log("==========================  조건문  ==============================");
+
+const score = 70;
+
+
+if(score >= 60){
+  console.log("합격");
+}else{
+console.log("불합격");
+}
+
+console.log("if문 종료");
