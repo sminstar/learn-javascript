@@ -64,7 +64,7 @@ const sayHello = (param_name) => {
 }
 
 sayHello(username);
-debugger;
+
 const double = (num) => {
 
   const result = num * 2;
@@ -77,9 +77,9 @@ const doubleResult = double(add);
 console.log(doubleResult);
 
 
-console.log("==========================  조건문  ==============================");
+console.log("==========================  조건문  ============================");
 
-const score = 70;
+const score = 78;
 
 
 if(score >= 60){
@@ -89,3 +89,86 @@ console.log("불합격");
 }
 
 console.log("if문 종료");
+
+let grade = "";
+
+if(score >= 90){
+  grade = "A등급";
+} else if(score >= 80){
+  grade = "B등급";
+}else if(score >= 70){
+  grade = "C등급";
+}else if(score >= 60){
+  grade = "D등급";
+} else {
+  grade = "F등급";
+}
+
+console.log(grade);
+
+
+// 여기에 orderSandwich 함수를 작성하세요
+// orderSandwich 함수는 type 매개변수를 받고 타입에 따라 다른 재료를 반환해야 합니다
+
+
+// 함수 테스트 - 아래 코드는 수정하지 마세요
+// console.log("기본 샌드위치 주문: " + orderSandwich());
+// console.log("기본 샌드위치 주문: " + orderSandwich('basic'));
+// console.log("비건 샌드위치 주문: " + orderSandwich('vegan'));
+
+/* 예상 결과:
+기본 샌드위치 주문: 🥖 + 🥬 + 🍅 + 🧀 + 🥓
+기본 샌드위치 주문: 🥖 + 🥬 + 🍅 + 🧀 + 🥓
+비건 샌드위치 주문: 🥖 + 🥬 + 🍅 + 🥑 + 🥒
+
+*/
+
+
+const orderSandwich = (type = "noParam") => {
+
+  var result = "";
+
+  console.log("type ====> " + type);
+
+  // if(type == "basic"){
+
+  //   result = "🥖 + 🥬 + 🍅 + 🧀 + 🥓";
+  // }else if(type == "vegan"){
+  //   result = "🥖 + 🥬 + 🍅 + 🥑 + 🥒";
+  // }else {
+  //   result = "🥖 + 🥬 + 🍅 + 🧀 + 🥓";
+  // }
+
+  result = type === "vegan"?"🥖 + 🥬 + 🍅 + 🥑 + 🥒":"🥖 + 🥬 + 🍅 + 🧀 + 🥓"; 
+
+  return result;
+}
+
+console.log("기본 샌드위치 주문: " + orderSandwich());
+console.log("기본 샌드위치 주문: " + orderSandwich('basic'));
+console.log("비건 샌드위치 주문: " + orderSandwich("vegan"));
+
+;;;
+
+// age의 값이 18세 이상이면 adultType의 값은 "성인" 
+// age의 값이 18세 미만이면 adultType의 값은 "미성년자"
+const age = 20;
+const adultType = age >= 18 ? "성인" : "미성년자";
+console.log("\n");
+console.log("adultType:" +  adultType);
+
+
+if(0) {
+  console.log("true");
+}else {
+  console.log("false");
+}
+
+
+const userInput = "";
+
+// if(userInput){  
+//   alert("입력값 작성됨");
+// }else{
+//   alert("입력값을 작성하세요");
+// }
